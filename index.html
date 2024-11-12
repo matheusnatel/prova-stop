@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Stop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen" class="start-screen">
+      <h1>Bem-vindo ao Jogo de Stop!</h1>
+      <button id="start-btn">Começar Jogo</button>
+    </div>
+
+    <div id="game-screen" class="game-screen">
+      <h2>Letra Sorteada: <span id="letter-display">A</span></h2>
+
+      <div class="categories">
+        <h3>Preencha as categorias com a letra sorteada!</h3>
+        <ul id="category-list">
+          <li>
+            <label for="name">Nome: </label>
+            <input type="text" id="name" placeholder="Exemplo: Ana">
+          </li>
+          <li>
+            <label for="animal">Animal: </label>
+            <input type="text" id="animal" placeholder="Exemplo: Abelha">
+          </li>
+          <li>
+            <label for="city">Cidade: </label>
+            <input type="text" id="city" placeholder="Exemplo: Alagoas">
+          </li>
+          <li>
+            <label for="food">Comida: </label>
+            <input type="text" id="food" placeholder="Exemplo: Arroz">
+          </li>
+          <li>
+            <label for="color">Cor: </label>
+            <input type="text" id="color" placeholder="Exemplo: Amarelo">
+          </li>
+          <li>
+            <label for="fruit">Fruta: </label>
+            <input type="text" id="fruit" placeholder="Exemplo: Abacaxi">
+          </li>
+          <li>
+            <label for="professor">Professor: </label>
+            <input type="text" id="professor" placeholder="Exemplo: Ana">
+          </li>
+        </ul>
+      </div>
+
+      <div class="timer">
+        <p>Tempo restante: <span id="timer">60</span>s</p>
+      </div>
+
+      <div class="buttons">
+        <button id="finish-btn" disabled>Finalizar</button>
+        <button id="restart-btn" disabled>Reiniciar Jogo</button>
+      </div>
+
+      <div id="status">
+        <p>Preencha todas as categorias e finalize!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
